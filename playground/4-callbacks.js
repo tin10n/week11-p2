@@ -1,29 +1,34 @@
+// A function that executes a callback function after a specified delay.
+// It takes two main arguments
 setTimeout(() => {
-    console.log('Two seconds aree up')
+    console.log('Two seconds are up')
 }, 2000)
 
 const names = ['Andrew', 'Jen', 'Jess']
-const shortNames = names.filter((name) =>{
+const shortNames = names.filter((name) => {
     return name.length <= 4
 })
 
+// Geocode function to properly pass data to the callback
 const geocode = (address, callback) => {
     setTimeout(() => {
-        latitude: 0,
-        logitude: 0
-    }
-
-    callback(data)
-}, 2000)
+        const data = {
+            latitude: 0,
+            longitude: 0
+        }
+        callback(data)
+    }, 2000)
 }
 
+// Corrected call to geocode with the missing parenthesis added
 geocode('Philadelphia', (data) => {
-console.log(data)
-}
+    console.log(data)
+})
 
+// Another example of an asynchronous function.
 const add = (a, b, callback) => {
     setTimeout(() => {
-        callback(a+b)
+        callback(a + b)
     }, 2000)
 }
 
