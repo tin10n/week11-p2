@@ -113,7 +113,7 @@ geocode(address, (error,data) => {
 //         console.log('Error', error)
 //         console.log('Data', data)
 //      })
-// })
+})
 
 // Goal: Accept location via command line arguement
 
@@ -124,7 +124,7 @@ geocode(address, (error,data) => {
         console.log(data.location)
         console.log(forecastData)
 
-    }
+    })
 // forecast(-75.7088, 44.1545, (error,data) => {
 //     console.log('Error', error)
 //     console.log('Data', data)
